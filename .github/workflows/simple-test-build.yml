@@ -5,6 +5,8 @@ on:
 name: conventional-release-labels
 jobs:
   label:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: bcoe/conventional-release-labels@v1
+      
