@@ -1,12 +1,12 @@
 on:
-  pull_request_target:
-    types: [ opened, edited ]
+ workflow_dispatch:    
     
 name: conventional-release-labels
 jobs:
   label:
     permissions: write-all
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     steps:
-      - uses: bcoe/conventional-release-labels@v1
+      - name: test
+        run: sleep 600
       
